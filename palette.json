@@ -1,7 +1,7 @@
 {
   "$schema": "./palette.schema.json",
   "name": "Penamiller",
-  "author": "aparra",
+  "author": "parraletz",
   "background": "#141413",
   "background_source": "sampled screenshot interior (20,20,19); ANSI and extras use labeled hex values",
   "foreground": "#FAF9F5",

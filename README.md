@@ -7,7 +7,7 @@
 > All included ports are still dark. For exact colors, refer to `palette.json`
 > rather than the illustration's pixels.
 
-A dark color palette created by **aparra**, independent of personal dotfiles.
+A dark color palette created by **parraletz**, independent of personal dotfiles.
 Repository: [parraletz/penamiller](https://github.com/parraletz/penamiller).
 
 - Background: `#141413`; foreground: `#FAF9F5`; orange accent: `#D97757`.
@@ -20,6 +20,17 @@ Repository: [parraletz/penamiller](https://github.com/parraletz/penamiller).
 Ports are static files: changing the palette **does not regenerate them**.
 Nothing is installed or activated automatically. Back up your files and merge
 the snippets into your configuration rather than replacing entire config files.
+
+## Inspiration
+
+Penamiller is inspired by the sunset colors along the road from **Peñamiller
+to Pinal de Amoles, Querétaro, Mexico**. Its warm accents and dark background
+bring that evening atmosphere into terminals and editors.
+
+For a look at the region behind the palette, explore the
+[official Querétaro tourism guide to Pinal de Amoles](https://queretaro.travel/lugares/conoce-pinal-de-amoles/)
+(in Spanish), which describes the changing landscape from Peñamiller's
+semi-desert mountains to the forests of the Sierra Gorda.
 
 ## Installation by application
 

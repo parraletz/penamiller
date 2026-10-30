@@ -1,7 +1,7 @@
 # Origen
 
 Extraído de `parraletz/dotfiles-ai`, commit `9a5da19`, sin copiar su
-historial ni las configuraciones personales. Autor de la paleta: aparra.
+historial ni las configuraciones personales. Autor de la paleta: parraletz.
 
 Los archivos de tema se conservan; Ghostty, WezTerm, Catppuccin/Neovim,
 Herdr y fzf contienen solo el fragmento reutilizable de color.

@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Penamiller palette",
-  "description": "Paleta creada por aparra. ANSI ordenado de 0 a 15; los ocho últimos colores son brillantes.",
+  "description": "Paleta creada por parraletz. ANSI ordenado de 0 a 15; los ocho últimos colores son brillantes.",
   "type": "object",
   "additionalProperties": false,
   "required": ["name", "author", "background", "background_source", "foreground", "ansi", "extras"],

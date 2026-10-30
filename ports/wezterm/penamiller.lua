@@ -1,4 +1,4 @@
--- Penamiller palette by aparra. Returns a WezTerm colors table.
+-- Penamiller palette by parraletz. Returns a WezTerm colors table.
 return {
     foreground = "#FAF9F5", background = "#141413",
     cursor_bg = "#D97757", cursor_fg = "#141413", cursor_border = "#D97757",
