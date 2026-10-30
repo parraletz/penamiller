@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Penamiller palette",
+  "description": "Paleta creada por aparra. ANSI ordenado de 0 a 15; los ocho últimos colores son brillantes.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "author", "background", "background_source", "foreground", "ansi", "extras"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "name": {"const": "Penamiller"},
+    "author": {"type": "string", "minLength": 1},
+    "background": {"$ref": "#/$defs/hexColor"},
+    "background_source": {"type": "string", "minLength": 1},
+    "foreground": {"$ref": "#/$defs/hexColor"},
+    "ansi": {
+      "type": "array",
+      "minItems": 16,
+      "maxItems": 16,
+      "items": {"$ref": "#/$defs/hexColor"}
+    },
+    "extras": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["orange", "orange_bright", "pink", "teal", "lavender", "lime", "sky", "sand"],
+      "properties": {
+        "orange": {"$ref": "#/$defs/hexColor"},
+        "orange_bright": {"$ref": "#/$defs/hexColor"},
+        "pink": {"$ref": "#/$defs/hexColor"},
+        "teal": {"$ref": "#/$defs/hexColor"},
+        "lavender": {"$ref": "#/$defs/hexColor"},
+        "lime": {"$ref": "#/$defs/hexColor"},
+        "sky": {"$ref": "#/$defs/hexColor"},
+        "sand": {"$ref": "#/$defs/hexColor"}
+      }
+    }
+  },
+  "$defs": {
+    "hexColor": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"}
+  }
+}

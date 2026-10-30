@@ -1,0 +1,24 @@
+{
+  "KPackageStructure": "Plasma/LookAndFeel",
+  "KPlugin": {
+    "Authors": [
+      {
+        "Name": "aparra"
+      }
+    ],
+    "Category": "Global Themes (Plasma 6)",
+    "ServiceTypes": [
+      "Plasma/LookAndFeel"
+    ],
+    "EnabledByDefault": true,
+    "Name": "Penamiller",
+    "Description": "Penamiller colors and Plasma style",
+    "Description[es]": "Colores y estilo Plasma Penamiller",
+    "Id": "com.parraletz.penamiller",
+    "Version": "1.0",
+    "License": "GPL-3.0-or-later",
+    "Website": "https://github.com/parraletz/penamiller",
+    "Keywords": "Desktop;Workspace;Appearance;Look and Feel;Penamiller;"
+  },
+  "X-Plasma-APIVersion": "2"
+}

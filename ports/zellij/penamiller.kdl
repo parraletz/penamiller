@@ -1,0 +1,129 @@
+// Penamiller — palette by aparra
+themes {
+    penamiller {
+        text_unselected {
+            base 201 198 187
+            background 20 20 19
+            emphasis_0 224 168 46
+            emphasis_1 106 168 79
+            emphasis_2 74 134 214
+            emphasis_3 192 91 196
+        }
+        text_selected {
+            base 250 249 245
+            background 38 38 36
+            emphasis_0 224 168 46
+            emphasis_1 106 168 79
+            emphasis_2 74 134 214
+            emphasis_3 192 91 196
+        }
+        ribbon_unselected {
+            base 201 198 187
+            background 20 20 19
+            emphasis_0 224 168 46
+            emphasis_1 106 168 79
+            emphasis_2 74 134 214
+            emphasis_3 192 91 196
+        }
+        ribbon_selected {
+            base 250 249 245
+            background 217 119 87
+            emphasis_0 224 168 46
+            emphasis_1 106 168 79
+            emphasis_2 74 134 214
+            emphasis_3 192 91 196
+        }
+        table_title {
+            base 74 134 214
+            background 20 20 19
+            emphasis_0 224 168 46
+            emphasis_1 106 168 79
+            emphasis_2 74 134 214
+            emphasis_3 192 91 196
+        }
+        table_cell_unselected {
+            base 250 249 245
+            background 20 20 19
+            emphasis_0 224 168 46
+            emphasis_1 106 168 79
+            emphasis_2 74 134 214
+            emphasis_3 192 91 196
+        }
+        table_cell_selected {
+            base 250 249 245
+            background 38 38 36
+            emphasis_0 224 168 46
+            emphasis_1 106 168 79
+            emphasis_2 74 134 214
+            emphasis_3 192 91 196
+        }
+        list_unselected {
+            base 250 249 245
+            background 20 20 19
+            emphasis_0 224 168 46
+            emphasis_1 106 168 79
+            emphasis_2 74 134 214
+            emphasis_3 192 91 196
+        }
+        list_selected {
+            base 250 249 245
+            background 38 38 36
+            emphasis_0 224 168 46
+            emphasis_1 106 168 79
+            emphasis_2 74 134 214
+            emphasis_3 192 91 196
+        }
+        frame_unselected {
+            base 94 93 89
+            background 20 20 19
+            emphasis_0 224 168 46
+            emphasis_1 106 168 79
+            emphasis_2 74 134 214
+            emphasis_3 192 91 196
+        }
+        frame_selected {
+            base 217 119 87
+            background 38 38 36
+            emphasis_0 224 168 46
+            emphasis_1 106 168 79
+            emphasis_2 74 134 214
+            emphasis_3 192 91 196
+        }
+        frame_highlight {
+            base 217 119 87
+            background 20 20 19
+            emphasis_0 224 168 46
+            emphasis_1 106 168 79
+            emphasis_2 74 134 214
+            emphasis_3 192 91 196
+        }
+        exit_code_success {
+            base 106 168 79
+            background 20 20 19
+            emphasis_0 224 168 46
+            emphasis_1 106 168 79
+            emphasis_2 74 134 214
+            emphasis_3 192 91 196
+        }
+        exit_code_error {
+            base 217 72 62
+            background 20 20 19
+            emphasis_0 224 168 46
+            emphasis_1 106 168 79
+            emphasis_2 74 134 214
+            emphasis_3 192 91 196
+        }
+        multiplayer_user_colors {
+            player_1 217 72 62
+            player_2 74 134 214
+            player_3 106 168 79
+            player_4 224 168 46
+            player_5 192 91 196
+            player_6 62 166 184
+            player_7 255 122 107
+            player_8 155 211 95
+            player_9 127 176 240
+            player_10 228 138 233
+        }
+    }
+}

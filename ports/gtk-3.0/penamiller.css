@@ -1,0 +1,27 @@
+@define-color penamiller_bg #141413;
+@define-color penamiller_surface #262624;
+@define-color penamiller_surface_alt #353532;
+@define-color penamiller_fg #FAF9F5;
+@define-color penamiller_muted #C9C6BB;
+@define-color penamiller_subtle #5E5D59;
+@define-color penamiller_accent #D97757;
+@define-color penamiller_hover #E0A82E;
+@define-color penamiller_blue #4A86D6;
+@define-color penamiller_green #6AA84F;
+@define-color penamiller_purple #C05BC4;
+
+window, .background { background-color: @penamiller_bg; color: @penamiller_fg; }
+headerbar, titlebar, menubar, toolbar { background-color: @penamiller_bg; color: @penamiller_fg; }
+button, entry, spinbutton, combobox, dropdown, notebook > header, frame > border { background-color: @penamiller_surface; color: @penamiller_fg; border-color: @penamiller_surface_alt; }
+button:hover, menuitem:hover, row:hover, treeview.view:hover { background-color: @penamiller_surface_alt; color: @penamiller_fg; }
+button:checked, button:active, entry:focus, spinbutton:focus, selection, treeview.view:selected, row:selected, tab:checked { background-color: @penamiller_accent; color: @penamiller_fg; }
+entry, textview, textview text, treeview.view, listview, columnview, iconview { background-color: @penamiller_bg; color: @penamiller_fg; caret-color: @penamiller_hover; }
+tooltip, popover, menu, .menu { background-color: @penamiller_surface; color: @penamiller_fg; border-color: @penamiller_surface_alt; }
+*:disabled { color: @penamiller_subtle; }
+link, *:link { color: @penamiller_blue; }
+*:visited { color: @penamiller_purple; }
+progressbar progress, switch:checked, check:checked, radio:checked { background-color: @penamiller_green; }
+levelbar block.empty { background-color: @penamiller_surface_alt; }
+levelbar block.filled { background-color: @penamiller_blue; }
+scrollbar slider { background-color: @penamiller_subtle; }
+scrollbar slider:hover { background-color: @penamiller_muted; }

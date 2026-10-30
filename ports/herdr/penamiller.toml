@@ -1,0 +1,25 @@
+[theme]
+name = "catppuccin"
+auto_switch = false
+
+# -- Penamiller -----------------------------------------
+[theme.custom]
+panel_bg      = "#141413"
+surface_dim   = "#141413"
+surface0      = "#262624"
+surface1      = "#353532"
+overlay0      = "#5E5D59"
+overlay1      = "#5E5D59"
+sidebar_bg    = "#141413"
+active_row_bg = "#262624"
+selection_bg  = "#353532"
+text          = "#FAF9F5"
+subtext0      = "#C9C6BB"
+accent        = "#D97757"
+red           = "#D9483E"
+green         = "#6AA84F"
+yellow        = "#E0A82E"
+blue          = "#4A86D6"
+mauve         = "#C05BC4"
+teal          = "#3FB8A4"
+peach         = "#D97757"

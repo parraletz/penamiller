@@ -1,0 +1,19 @@
+{
+  "KPlugin": {
+    "Authors": [
+      {
+        "Name": "aparra"
+      }
+    ],
+    "Category": "Plasma Theme",
+    "Description": "Penamiller Plasma style, using Soplos Classic Black as a reference",
+    "Description[es]": "Estilo Plasma Penamiller, inspirado en Soplos Classic Black",
+    "EnabledByDefault": true,
+    "Id": "penamiller",
+    "License": "GPL-3.0-or-later",
+    "Name": "Penamiller",
+    "Version": "1.0"
+  },
+  "X-Plasma-API": "6.0",
+  "KPackageStructure": "Plasma/Theme"
+}

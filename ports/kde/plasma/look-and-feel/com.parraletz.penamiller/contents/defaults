@@ -1,0 +1,9 @@
+[kdeglobals][General]
+AccentColor=217,119,87
+ColorScheme=Penamiller
+
+[kdeglobals][KDE]
+widgetStyle=Breeze
+
+[plasmarc][Theme]
+name=penamiller

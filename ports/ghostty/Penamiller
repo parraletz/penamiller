@@ -1,0 +1,23 @@
+# Penamiller — palette by aparra
+background = #141413
+foreground = #FAF9F5
+cursor-color = #D97757
+cursor-text = #141413
+selection-background = #353532
+selection-foreground = #FAF9F5
+palette = 0=#262624
+palette = 1=#D9483E
+palette = 2=#6AA84F
+palette = 3=#E0A82E
+palette = 4=#4A86D6
+palette = 5=#C05BC4
+palette = 6=#3EA6B8
+palette = 7=#C9C6BB
+palette = 8=#5E5D59
+palette = 9=#FF7A6B
+palette = 10=#9BD35F
+palette = 11=#FFD36B
+palette = 12=#7FB0F0
+palette = 13=#E48AE9
+palette = 14=#72CDDD
+palette = 15=#FAF9F5

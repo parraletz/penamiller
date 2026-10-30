@@ -1,0 +1,31 @@
+[Desktop Entry]
+Name=Penamiller
+Comment=Penamiller Plasma Style based on Soplos Classic Black
+X-KDE-PluginInfo-Author=aparra
+X-KDE-PluginInfo-Name=penamiller
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Category=Plasma Theme
+X-KDE-PluginInfo-License=GPL-3.0-or-later
+X-KDE-PluginInfo-EnabledByDefault=true
+X-Plasma-API=6.0
+
+[Settings]
+FallbackTheme=breeze
+
+[ContrastEffect]
+enabled=false
+contrast=0.2
+intensity=0.4
+saturation=1.7
+
+[AdaptiveTransparency]
+enabled=true
+
+[Panel]
+DefaultHeight=48
+MinimumHeight=28
+Thickness=3
+Floating=true
+FloatingGap=10
+FloatingIconSize=48
+BackgroundRadius=15
