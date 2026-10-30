@@ -1,51 +1,51 @@
 # Penamiller
 
-![Penamiller: esquema oscuro y propuesta visual del modo claro](assets/penamiller-light-dark.png)
+![Penamiller: dark color scheme and light-mode concept](assets/penamiller-light-dark.png)
 
-> Vista conceptual generada con IA. **Dark** representa la identidad de la paleta
-> actual; **Light Concept** es una propuesta visual, no una variante instalable.
-> Los ports incluidos siguen siendo oscuros. Para colores exactos consulta
-> `palette.json`, no los píxeles de la ilustración.
+> AI-generated concept preview. **Dark** reflects the current palette's visual
+> identity; **Light Concept** is a design proposal, not an installable variant.
+> All included ports are still dark. For exact colors, refer to `palette.json`
+> rather than the illustration's pixels.
 
-Paleta oscura creada por **aparra**, independiente de sus dotfiles personales.
-Repositorio: [parraletz/penamiller](https://github.com/parraletz/penamiller).
+A dark color palette created by **aparra**, independent of personal dotfiles.
+Repository: [parraletz/penamiller](https://github.com/parraletz/penamiller).
 
-- Fondo: `#141413`; texto: `#FAF9F5`; acento naranja: `#D97757`.
-- [`palette.json`](palette.json): paleta central, 16 colores ANSI y ocho acentos.
-- [`palette.schema.json`](palette.schema.json): JSON Schema 2020-12; la referencia
-  relativa de la paleta permite validarla sin consultar un servidor.
-- [`ports/`](ports/): temas y fragmentos de color, sin configuraciones personales.
-- [`SOURCE.md`](SOURCE.md): procedencia, ajustes de la extracción y licencias existentes.
+- Background: `#141413`; foreground: `#FAF9F5`; orange accent: `#D97757`.
+- [`palette.json`](palette.json): the central palette, with 16 ANSI colors and eight accents.
+- [`palette.schema.json`](palette.schema.json): JSON Schema 2020-12; the palette's
+  relative reference allows validation without contacting a server.
+- [`ports/`](ports/): themes and color configuration snippets, without personal settings.
+- [`SOURCE.md`](SOURCE.md): provenance, extraction changes, and existing license declarations.
 
-Los ports son archivos estáticos: cambiar la paleta **no los regenera**.
-No se instala ni activa nada automáticamente. Respalda tus archivos y combina
-los fragmentos con tu configuración; no reemplaces configuraciones completas.
+Ports are static files: changing the palette **does not regenerate them**.
+Nothing is installed or activated automatically. Back up your files and merge
+the snippets into your configuration rather than replacing entire config files.
 
-## Instalación por aplicación
+## Installation by application
 
-Las rutas siguientes asumen `~/.config`; ajústalas si usas `XDG_CONFIG_HOME`.
+The paths below assume `~/.config`; adjust them if you use `XDG_CONFIG_HOME`.
 
-| Aplicación | Recurso | Instalación / activación |
+| Application | Resource | Installation / activation |
 | --- | --- | --- |
-| Ghostty | `ports/ghostty/Penamiller` | Copiar a `~/.config/ghostty/themes/Penamiller`; añadir `theme = Penamiller` a la configuración. |
-| WezTerm | `ports/wezterm/penamiller.lua` | Copiar junto a `wezterm.lua`; usar `config.colors = require("penamiller")` en lugar del esquema previo. |
-| bat | `ports/bat/penamiller.tmTheme` | Copiar a `$(bat --config-dir)/themes/`; ejecutar `bat cache --build` y seleccionar `--theme=penamiller`. |
-| iTerm2 | `ports/iterm2/Penamiller.itermcolors` | Importar en Settings → Profiles → Colors → Color Presets → Import. |
-| Zed | `ports/zed/penamiller.json` | Copiar a `~/.config/zed/themes/`; seleccionar `Penamiller`. |
-| OpenCode | `ports/opencode/penamiller.json` | Copiar a `~/.config/opencode/themes/`; seleccionar `penamiller` en el ajuste `theme` de tu TUI. |
-| Zellij | `ports/zellij/penamiller.kdl` | Copiar a `~/.config/zellij/themes/`; usar `theme "penamiller"` en `config.kdl`. |
-| Herdr | `ports/herdr/penamiller.toml` | Combinar `[theme]` y `[theme.custom]` con `~/.config/herdr/config.toml`, sin duplicar tablas. |
-| fzf | `ports/fzf/penamiller.sh` | Cargar con `source /ruta/a/penamiller/ports/fzf/penamiller.sh` desde tu shell; conserva las demás opciones de fzf. |
-| Neovim / Catppuccin | `ports/nvim/penamiller.lua` | Combinar los overrides con las opciones de Catppuccin; ejemplo abajo. |
-| Konsole | `ports/konsole/` | Copiar el esquema a `~/.local/share/konsole/`; seleccionarlo desde la apariencia del perfil. El perfil incluido es opcional. |
-| KDE / Plasma | `ports/kde/` | Copiar `color-schemes/` y los paquetes de `plasma/` a las mismas rutas bajo `~/.local/share/`; elegirlos en Preferencias del sistema. |
-| GTK 3 / 4 | `ports/gtk-3.0/penamiller.css`, `ports/gtk-4.0/penamiller.css` | Copiar cada archivo a su directorio `~/.config/gtk-3.0/` o `gtk-4.0/`; añadir `@import url("penamiller.css");` al principio de cada `gtk.css`, preservando el resto. |
+| Ghostty | `ports/ghostty/Penamiller` | Copy to `~/.config/ghostty/themes/Penamiller`; add `theme = Penamiller` to your configuration. |
+| WezTerm | `ports/wezterm/penamiller.lua` | Copy next to `wezterm.lua`; use `config.colors = require("penamiller")` instead of the previous color scheme. |
+| bat | `ports/bat/penamiller.tmTheme` | Copy to `$(bat --config-dir)/themes/`; run `bat cache --build` and select `--theme=penamiller`. |
+| iTerm2 | `ports/iterm2/Penamiller.itermcolors` | Import through Settings → Profiles → Colors → Color Presets → Import. |
+| Zed | `ports/zed/penamiller.json` | Copy to `~/.config/zed/themes/`; select `Penamiller`. |
+| OpenCode | `ports/opencode/penamiller.json` | Copy to `~/.config/opencode/themes/`; select `penamiller` in your TUI's `theme` setting. |
+| Zellij | `ports/zellij/penamiller.kdl` | Copy to `~/.config/zellij/themes/`; set `theme "penamiller"` in `config.kdl`. |
+| Herdr | `ports/herdr/penamiller.toml` | Merge `[theme]` and `[theme.custom]` into `~/.config/herdr/config.toml` without duplicating tables. |
+| fzf | `ports/fzf/penamiller.sh` | Load with `source /path/to/penamiller/ports/fzf/penamiller.sh` in your shell; existing fzf options are preserved. |
+| Neovim / Catppuccin | `ports/nvim/penamiller.lua` | Merge the overrides into your Catppuccin options; see the example below. |
+| Konsole | `ports/konsole/` | Copy the color scheme to `~/.local/share/konsole/`; select it in your profile's appearance settings. The included profile is optional. |
+| KDE / Plasma | `ports/kde/` | Copy `color-schemes/` and the packages in `plasma/` to the corresponding paths under `~/.local/share/`; select them in System Settings. |
+| GTK 3 / 4 | `ports/gtk-3.0/penamiller.css`, `ports/gtk-4.0/penamiller.css` | Copy each file to its respective `~/.config/gtk-3.0/` or `gtk-4.0/` directory; add `@import url("penamiller.css");` at the beginning of each `gtk.css`, preserving the remaining content. |
 
 ### Neovim
 
-Requiere `catppuccin/nvim`; es una personalización de Catppuccin, no un
-colorscheme independiente. Copia el archivo a `~/.config/nvim/lua/penamiller.lua`.
-Con lazy.nvim, combina este fragmento con la especificación existente:
+Requires `catppuccin/nvim`: this is a Catppuccin customization, not a standalone
+color scheme. Copy the file to `~/.config/nvim/lua/penamiller.lua`.
+With lazy.nvim, merge this snippet into your existing plugin specification:
 
 ```lua
 {
@@ -57,21 +57,21 @@ Con lazy.nvim, combina este fragmento con la especificación existente:
 }
 ```
 
-Selecciona `catppuccin-mocha` como colorscheme; en LazyVim, mediante las
-opciones de `LazyVim/LazyVim`. Las integraciones existentes permanecen intactas.
+Select `catppuccin-mocha` as your color scheme; in LazyVim, set it through the
+`LazyVim/LazyVim` options. Existing integrations remain unchanged.
 
-### KDE y GTK
+### KDE and GTK
 
-El estilo Plasma necesita Breeze como fallback. Los overrides GTK se diseñaron
-sobre Breeze y pueden no cubrir aplicaciones que impongan su propio estilo.
-El Global Theme `com.parraletz.penamiller` aplica solo esquema de colores,
-estilo Plasma y estilo de widgets Breeze: no cambia layout, iconos, cursor,
-número de escritorios ni efectos. El preview original muestra también las
-preferencias personales del escritorio de origen, que no se incluyen.
+The Plasma style requires Breeze as a fallback. The GTK overrides were designed
+on top of Breeze and may not cover applications that enforce their own styling.
+The `com.parraletz.penamiller` Global Theme only applies the color scheme,
+Plasma style, and Breeze widget style: it does not change your layout, icons,
+cursor, desktop count, or effects. The original preview also shows personal
+desktop preferences from the source setup, which are not included.
 
-## Validación
+## Validation
 
-Con Python 3.11 o posterior:
+Using Python 3.11 or later:
 
 ```sh
 python3 -m venv .venv
@@ -79,6 +79,6 @@ python3 -m venv .venv
 .venv/bin/python -m unittest discover -s tests -v
 ```
 
-Las pruebas comprueban el schema, casos inválidos, formatos JSON/plist/TOML,
-paridad ANSI de Ghostty y el alcance visual del Global Theme. No sustituyen
-las pruebas de apariencia dentro de cada aplicación.
+The tests check the schema, invalid inputs, JSON/plist/TOML formats,
+Ghostty ANSI palette consistency, and the Global Theme's visual-only settings.
+They do not replace visual testing within each application.
