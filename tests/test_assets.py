@@ -3,6 +3,7 @@ import configparser
 import json
 from pathlib import Path
 import plistlib
+import re
 import tomllib
 import unittest
 
@@ -77,6 +78,41 @@ class PaletteTests(unittest.TestCase):
         self.assertEqual(set(config['kdeglobals][General']), {'accentcolor', 'colorscheme'})
         self.assertEqual(set(config['kdeglobals][KDE']), {'widgetstyle'})
         self.assertEqual(set(config['plasmarc][Theme']), {'name'})
+
+    def test_btop_theme(self):
+        text = (ROOT / 'ports/btop/penamiller.theme').read_text()
+        colors = {}
+        palette_colors = {
+            self.palette['background'], self.palette['foreground'],
+            *self.palette['ansi'], *self.palette['extras'].values(),
+        }
+        for number, line in enumerate(text.splitlines(), 1):
+            if not line.strip() or line.startswith('#'):
+                continue
+            with self.subTest(line=number):
+                match = re.fullmatch(r'theme\[([a-z_]+)\]="(#[0-9A-F]{6})"', line)
+                self.assertIsNotNone(match, line)
+                key, value = match.groups()
+                self.assertNotIn(key, colors, 'Duplicate theme key')
+                self.assertIn(value, palette_colors)
+                colors[key] = value
+
+        expected = {
+            'main_bg', 'main_fg', 'title', 'hi_fg', 'selected_bg', 'selected_fg',
+            'inactive_fg', 'graph_text', 'meter_bg', 'proc_misc', 'cpu_box',
+            'mem_box', 'net_box', 'proc_box', 'div_line', 'proc_pause_bg',
+            'proc_follow_bg', 'proc_banner_bg', 'proc_banner_fg', 'followed_bg',
+            'followed_fg',
+        }
+        for graph in ('temp', 'cpu', 'free', 'cached', 'available', 'used',
+                      'download', 'upload', 'process'):
+            expected.update(f'{graph}_{stop}' for stop in ('start', 'mid', 'end'))
+        self.assertEqual(set(colors), expected)
+        self.assertEqual(colors['main_bg'], self.palette['background'])
+        self.assertEqual(colors['main_fg'], self.palette['foreground'])
+        self.assertEqual(colors['hi_fg'], self.palette['extras']['orange'])
+        self.assertEqual(colors['selected_bg'], self.palette['extras']['orange'])
+        self.assertEqual(colors['selected_fg'], self.palette['background'])
 
 
 if __name__ == '__main__':

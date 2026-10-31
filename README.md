@@ -42,6 +42,7 @@ The paths below assume `~/.config`; adjust them if you use `XDG_CONFIG_HOME`.
 | Ghostty | `ports/ghostty/Penamiller` | Copy to `~/.config/ghostty/themes/Penamiller`; add `theme = Penamiller` to your configuration. |
 | WezTerm | `ports/wezterm/penamiller.lua` | Copy next to `wezterm.lua`; use `config.colors = require("penamiller")` instead of the previous color scheme. |
 | bat | `ports/bat/penamiller.tmTheme` | Copy to `$(bat --config-dir)/themes/`; run `bat cache --build` and select `--theme=penamiller`. |
+| btop | `ports/btop/penamiller.theme` | Copy to `~/.config/btop/themes/`; select `penamiller` in Options → Color theme, or set `color_theme = "penamiller"` in `btop.conf` while btop is closed. |
 | iTerm2 | `ports/iterm2/Penamiller.itermcolors` | Import through Settings → Profiles → Colors → Color Presets → Import. |
 | Zed | `ports/zed/penamiller.json` | Copy to `~/.config/zed/themes/`; select `Penamiller`. |
 | OpenCode | `ports/opencode/penamiller.json` | Copy to `~/.config/opencode/themes/`; select `penamiller` in your TUI's `theme` setting. |
@@ -136,7 +137,8 @@ python3 -m venv .venv
 ```
 
 The tests check the schema, invalid inputs, JSON/plist/TOML formats,
-Ghostty ANSI palette consistency, and the Global Theme's visual-only settings.
+Ghostty ANSI palette consistency, btop theme syntax and palette consistency,
+and the Global Theme's visual-only settings.
 Neovim tests also load the theme without user configuration or third-party
 plugins, check UI/syntax/diagnostic/integration groups and palette consistency,
 and exercise reloads and single-file installation. Runtime tests are skipped

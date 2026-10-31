@@ -1,0 +1,73 @@
+# Penamiller by parraletz
+# https://github.com/parraletz/penamiller
+# Static port of palette.json; colors are not regenerated automatically.
+
+# Main interface and selection
+theme[main_bg]="#141413"
+theme[main_fg]="#FAF9F5"
+theme[title]="#E8E6DC"
+theme[hi_fg]="#D97757"
+theme[selected_bg]="#D97757"
+theme[selected_fg]="#141413"
+theme[inactive_fg]="#5E5D59"
+theme[graph_text]="#C9C6BB"
+theme[meter_bg]="#262624"
+theme[proc_misc]="#3FB8A4"
+
+# Panel borders and dividers
+theme[cpu_box]="#D97757"
+theme[mem_box]="#6AA84F"
+theme[net_box]="#3EA6B8"
+theme[proc_box]="#9D8CF0"
+theme[div_line]="#5E5D59"
+
+# Temperature: cool blue to warm orange and red
+theme[temp_start]="#4A86D6"
+theme[temp_mid]="#D97757"
+theme[temp_end]="#FF7A6B"
+
+# CPU load: green to orange and red
+theme[cpu_start]="#6AA84F"
+theme[cpu_mid]="#D97757"
+theme[cpu_end]="#FF7A6B"
+
+# Free memory / disk space
+theme[free_start]="#6AA84F"
+theme[free_mid]="#9BD35F"
+theme[free_end]="#B6D94C"
+
+# Cached memory
+theme[cached_start]="#3EA6B8"
+theme[cached_mid]="#3FB8A4"
+theme[cached_end]="#72CDDD"
+
+# Available memory / disk space
+theme[available_start]="#E0A82E"
+theme[available_mid]="#FFD36B"
+theme[available_end]="#E8E6DC"
+
+# Used memory / disk space
+theme[used_start]="#D97757"
+theme[used_mid]="#F0956F"
+theme[used_end]="#FF7A6B"
+
+# Network traffic
+theme[download_start]="#4A86D6"
+theme[download_mid]="#6A9BCC"
+theme[download_end]="#7FB0F0"
+theme[upload_start]="#C05BC4"
+theme[upload_mid]="#9D8CF0"
+theme[upload_end]="#E48AE9"
+
+# Per-process CPU gradients
+theme[process_start]="#6AA84F"
+theme[process_mid]="#D97757"
+theme[process_end]="#FF7A6B"
+
+# Process status banners and followed rows (ignored by older btop versions)
+theme[proc_pause_bg]="#D97757"
+theme[proc_follow_bg]="#4A86D6"
+theme[proc_banner_bg]="#9D8CF0"
+theme[proc_banner_fg]="#141413"
+theme[followed_bg]="#4A86D6"
+theme[followed_fg]="#FAF9F5"
