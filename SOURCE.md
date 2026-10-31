@@ -21,3 +21,10 @@ been replaced by an independently implemented, self-contained colorscheme in
 No Catppuccin source code or runtime dependency is included. Common plugin
 highlight groups are defined directly; support does not imply identical
 coverage or appearance to the previous Catppuccin-based configuration.
+
+## Omarchy theme
+
+`ports/omarchy/penamiller/` is an Omarchy theme built from this palette. Its
+Gruvbox Material wallpapers come from
+[curbol/omarchy-gruvbox-material](https://github.com/curbol/omarchy-gruvbox-material);
+the upstream repository declares no license.
