@@ -49,6 +49,7 @@ The paths below assume `~/.config`; adjust them if you use `XDG_CONFIG_HOME`.
 | Omarchy | `ports/omarchy/penamiller/` | Copy the directory to `~/.config/omarchy/themes/penamiller`; run `omarchy theme set penamiller`. The port includes Gruvbox Material wallpapers. |
 | Zellij | `ports/zellij/penamiller.kdl` | Copy to `~/.config/zellij/themes/`; set `theme "penamiller"` in `config.kdl`. |
 | Herdr | `ports/herdr/penamiller.toml` | Merge `[theme]` and `[theme.custom]` into `~/.config/herdr/config.toml` without duplicating tables. |
+| Herdr Desktop | `ports/herdr-app/penamiller.json` | Copy to `~/.config/herdr-app/themes/penamiller.json`; select `penamiller` in Settings or run `herdr-app do app.theme '{"name":"penamiller"}'` while the app is running. For the default theme, merge `"theme": "penamiller"` into `settings.json`. |
 | fzf | `ports/fzf/penamiller.sh` | Load with `source /path/to/penamiller/ports/fzf/penamiller.sh` in your shell; existing fzf options are preserved. |
 | Neovim | `colors/penamiller.lua` | Install this repository as a plugin or copy the file to your `colors/` directory; select `penamiller`. See below. |
 | Konsole | `ports/konsole/` | Copy the color scheme to `~/.local/share/konsole/`; select it in your profile's appearance settings. The included profile is optional. |
